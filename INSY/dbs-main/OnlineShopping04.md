@@ -1,0 +1,2 @@
+- [https://www.youtube.com/watch?v=1HamqOuv2Cw&list=PLZDOU071E4v6epq3GS0IqZicZc3xwwBN_&index=15](https://www.youtube.com/watch?v=1HamqOuv2Cw&list=PLZDOU071E4v6epq3GS0IqZicZc3xwwBN_&index=15)
+- [https://dbshostedfiles.s3.us-west-2.amazonaws.com/dsa/erd_ecommerce_database.png](https://dbshostedfiles.s3.us-west-2.amazonaws.com/dsa/erd_ecommerce_database.png)
