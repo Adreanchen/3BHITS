@@ -1,0 +1,6 @@
+### IntelliJ IDEA ###
+out/
+.idea/
+*.iml
+*.png
+*.pdf
