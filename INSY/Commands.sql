@@ -1,43 +1,44 @@
 CREATE DATABASE Fahrschule_DB;
 use Fahrschule_DB;
 
-CREATE TABLE Fahrlehrer (
-  fahrlehrer_id int AUTO_INCREMENT,
-  vorname varchar(255),
-  nachname varchar(255),
-  PRIMARY KEY (fahrlehrer_id)
-);
-
-CREATE TABLE Fahrschueler (
-  schueler_id int AUTO_INCREMENT,
-  vorname varchar(255),
-  nachname varchar(255),
-  adresse varchar(255),
-  PRIMARY KEY (schueler_id)
-);
-
-CREATE TABLE Theoriekurs (
-  kurs_id int AUTO_INCREMENT,
-  kurs_name varchar(255),
-  fahrlehrer_id int,
-  PRIMARY KEY (kurs_id),
-  CONSTRAINT Theoriekurs FOREIGN KEY (fahrlehrer_id) REFERENCES Fahrlehrer (fahrlehrer_id)
+CREATE TABLE Fahrlehrer ( 
+	Vorname varchar(255), 
+	Nachname varchar(255), 
+	teacher_email varchar(255),
+	IBAN varchar(34),
+	PRIMARY KEY (teacher_email)
 );
 
 CREATE TABLE Fahrschulauto (
-  auto_id int AUTO_INCREMENT,
-  kennzeichen varchar(255),
-  modell varchar(255),
-  fahrlehrer_id int,
-  PRIMARY KEY (auto_id),
-  CONSTRAINT Fahrschulauto FOREIGN KEY (fahrlehrer_id) REFERENCES Fahrlehrer (fahrlehrer_id)
+	Marke varchar(255),
+	Modell varchar(255),
+	Kennzeichen varchar(10),
+	FIN char(17),
+	teacher_email varchar(255),
+	PRIMARY KEY (Kennzeichen, FIN),
+	FOREIGN KEY (teacher_email) REFERENCES Fahrlehrer(teacher_email)
 );
 
-CREATE TABLE Fahrschueler_hat_Theoriekurs (
-  schueler_id int,
-  kurs_id int,
-  PRIMARY KEY (schueler_id, kurs_id),
-  KEY kurs_id (kurs_id),
-  CONSTRAINT Fahrschueler_hat_Theoriekurs FOREIGN KEY (schueler_id) REFERENCES Fahrschueler (schueler_id),
-  CONSTRAINT Theoriekurs_hat_Fahrschueler FOREIGN KEY (kurs_id) REFERENCES Theoriekurs (kurs_id)
+CREATE TABLE Theoriekurs (
+	Name varchar(255),
+	teacher_email varchar(255),
+	Kurs_ID varchar(255),
+	PRIMARY KEY (Kurs_ID),
+	FOREIGN KEY (teacher_email) REFERENCES Fahrlehrer(teacher_email)
 );
+
+CREATE TABLE Fahrschueler (
+	Vorname varchar(255),
+	Nachname varchar(255),
+	student_email varchar(255),
+	PRIMARY KEY (student_email)
+);
+
+CREATE TABLE Fahrschueler_nimmt_Theoriekurs (
+	Kurs_ID varchar(255),
+	student_email varchar(255),
+	PRIMARY KEY (Kurs_ID, student_email),
+	FOREIGN KEY (Kurs_ID) REFERENCES Theoriekurs(Kurs_ID),
+	FOREIGN KEY (student_email) REFERENCES Fahrschueler(student_email)
+);
+	
