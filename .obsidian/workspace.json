@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SytBS/DHCP_aufsetzen.md",
+                "file": "SEW/Mitschrift.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DHCP_aufsetzen"
+              "title": "Mitschrift"
             }
           }
         ]
@@ -171,8 +171,13 @@
   },
   "active": "21895c1cba94efb7",
   "lastOpenFiles": [
-    "SytBS/02-Virtual Networking.pdf",
+    "SEW/basefigure.png",
+    "SEW/Weitere Mitschrift.md",
+    "SEW/Mitschrift.md",
+    "SEW/Mitschrift.pdf",
+    "SEW/Teststoff.md",
     "SytBS/DHCP_aufsetzen.md",
+    "SytBS/02-Virtual Networking.pdf",
     "ITP/Terrorie/Mitschrift.md"
   ]
 }
