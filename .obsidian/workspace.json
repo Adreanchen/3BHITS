@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fb9cd14dcb77c941",
+        "id": "05f9f12803b1918b",
         "type": "tabs",
         "children": [
           {
-            "id": "21895c1cba94efb7",
+            "id": "ca5969fb08b69c7e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SEW/Mitschrift.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Mitschrift"
+              "title": "New tab"
             }
           }
         ]
@@ -169,14 +165,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "21895c1cba94efb7",
+  "active": "ca5969fb08b69c7e",
   "lastOpenFiles": [
-    "SEW/Projekte/ArrayVsList/target/classes/at/htl/arrayvslist/Subject.class",
-    "SEW/Projekte/ArrayVsList/target/classes/at/htl/arrayvslist/ListWithPojo.class",
+    "SEW/Mitschrift.md",
     "SEW/Projekte/ArrayVsList/src/main/java/at/htl/arrayvslist/ListWithPojo.java~",
+    "SEW/Projekte/ArrayVsList/target/classes/at/htl/arrayvslist/ListWithPojo.class",
+    "SEW/Projekte/ArrayVsList/target/classes/at/htl/arrayvslist/Subject.class",
     "SEW/basefigure.png",
     "SEW/Weitere Mitschrift.md",
-    "SEW/Mitschrift.md",
     "SEW/Mitschrift.pdf",
     "SEW/Teststoff.md",
     "SytBS/DHCP_aufsetzen.md",
