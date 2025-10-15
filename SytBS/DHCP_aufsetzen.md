@@ -1,12 +1,19 @@
 # DHCP Server aufsetzen auf der VM
 
 **Please keep in mind that all of these commands where executed on the Server via SSH**
+
    47  history
+   
    48  systemctl status sshd
+   
    49  cd .ssh/
+   
    50  la
+   
    51  ls -la
+   
    52  exit
+   
    
 ---
    
