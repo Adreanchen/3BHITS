@@ -9,7 +9,7 @@
 *  52  exit
    
 ---
-   
+
 ## change in interfaces dhcp to static
 
 *  53  vim /etc/network/interfaces
@@ -21,7 +21,7 @@ to:
 		address 10.0.5.--/24
 		gateway 10.0.5.1
 ```
-   
+
 *  54  ip a
 *  55  systemctl restart networking.service 
 *  56  ip a
@@ -34,7 +34,7 @@ to:
 *  58  apt install kea-dhcp4-server
    
 ---
-   
+
 ## editing the .conf file so we can use it (important!!!)
 
 *  59  cd /etc/kea/
@@ -50,8 +50,8 @@ to:
    
    * 64  grep -v "//" /etc/kea/kea-dhcp4.conf | grep -v -e "^$" > /etc/kea/kea-dhcp4.conf2
    
-3.  **i am going to upload the .conf file so you see what you have to do and please keep in mind if you have a typingmistake with 'systemctl status kea-dhcp4-server.service' you can see at what line you wrote something that the programm doesn't understand**
-   
+2.  **i am going to upload the .conf file so you see what you have to do and please keep in mind if you have a typingmistake with 'systemctl status kea-dhcp4-server.service' you can see at what line you wrote something that the programm doesn't understand**
+
 *  65  vim kea-dhcp4.conf2
 *  66  vim kea-dhcp4.conf2
 *  67  cat kea-dhcp4.conf2 > kea-dhcp4.conf
@@ -59,5 +59,4 @@ to:
 *  69  systemctl restart kea-dhcp4-server.service 
 *  70  systemctl status kea-dhcp4-server.service  
 *  71  exit
-
 
