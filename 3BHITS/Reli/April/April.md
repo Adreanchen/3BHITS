@@ -18,3 +18,11 @@
 * 16, Ab 1970: Ausbreitung/reformerischer/fundamentalistischer Tendenzen in mehreren islamischen Ländern
 
 <img src="5_Saelen.jpg">
+
+## [3_5Säulen.pdf](3_5Säulen.pdf)
+
+1. Schahada (Glaubensbekenntnis): Bekenntnis zu dem einen Gott (Allah) und seinem Propheten Mohammed.
+2. Salat (Pflichtgebet): Fünf tägliche Gebete in Richtung Mekka nach einer rituellen Waschung.
+3. Zakat (Almosensteuer): Eine jährliche Abgabe (ca. 2,5 bis 10 %) an Bedürftige als religiöse Reinigung des Vermögens.
+4. Saum (Fasten): Verzicht auf Essen, Trinken und Rauchen von der Morgendämmerung bis Sonnenuntergang im Monat Ramadan.
+5. Haddsch (Pilgerfahrt): Einmalige Reise nach Mekka zur Kaaba, sofern Gesundheit und Finanzen es erlauben.
