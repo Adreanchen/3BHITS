@@ -59,7 +59,7 @@ class SubClass extends BaseClass {
 
 #  Vererbung - abstrakte Methoden
 
-![basefigure](basefigure.png)
+![basefigure](pics/basefigure.png)
 
 > Problem: Was soll eine draw-Methode bei einer nicht konkreten geometrischen Figur (Base Figure) zeichnen?
 >
@@ -185,7 +185,7 @@ Um eine hohe Qualität der auszuliefernden Softwar sicherzustellen, ist es notwe
 
 ## White-Box-Test vs. Black-Box-Test 
 
-<img src="White_Black_Box.png" alt="bild von White und Black box" style="zoom:150%;" >
+<img src="pics/White_Black_Box.png" alt="bild von White und Black box" style="zoom:150%;" >
 
 ### White Box Test: 
 
@@ -308,3 +308,10 @@ Notation
 | r_1\|r_2       | r_1 oder r_2                       |
 | (r)            | r (Gruppierung)                    |
 
+# Syntax diagramm
+
+Ein regulärer Ausdruck kann auch als Syntaxdiagramm dargestellt werden. Das Syntaxdiagramm beschreibt den regulären Ausdruck, indem es in grafischer Form zeigt, welche Strings gebildet werden können. 
+
+<img src="pics/Syntaxdiagramm_Ausdruck.jpg" style="zoom:20%;" >
+
+<img src="pics/RegExp.png" style="zoom:150%;" >
