@@ -26,3 +26,50 @@
 3. Zakat (Almosensteuer): Eine jährliche Abgabe (ca. 2,5 bis 10 %) an Bedürftige als religiöse Reinigung des Vermögens.
 4. Saum (Fasten): Verzicht auf Essen, Trinken und Rauchen von der Morgendämmerung bis Sonnenuntergang im Monat Ramadan.
 5. Haddsch (Pilgerfahrt): Einmalige Reise nach Mekka zur Kaaba, sofern Gesundheit und Finanzen es erlauben.
+
+## [5_AB_Sunniten_Schiiten](5_AB_Sunniten_Schiiten.pdf)
+
+### 1. Todesjahr Muhammads
+
+Der Prophet Muhammad starb im Jahr 632.
+
+### 2. Zuordnung der Aussagen
+
+| **Aussage**                                                  | **Gruppe** |
+| ------------------------------------------------------------ | ---------- |
+| „Muhammad ist gestorben und er hat keinen Nachfolger bestimmt.“ | Sunniten   |
+| „Der Nachfolger des Propheten sollte aus seiner Familie sein.“ | Schiiten   |
+| „Wir sind die Partei Alis.“                                  | Schiiten   |
+| „Wir sind Muslime und glauben an Allah und den Koran.“       | Beide      |
+
+### 3. Begriffserläuterung
+
+- **Sunniten:** „Anhänger der Sunna“ (Brauch); größte Glaubensrichtung.
+- **Schiiten:** „Anhänger Alis“; zweitgrößte Glaubensrichtung.
+
+### 4. Bedeutung des Kalifen
+
+Ein Kalif (*chalafa*) ist der Nachfolger oder Stellvertreter und fungiert als Anführer der muslimischen Gemeinschaft.
+
+### 5. Die 4 rechtgeleiteten Kalifen
+
+1. Abu Bakr 
+2. Umar 
+3. Uthman 
+4. Ali 
+
+### 6. Ursache der Spaltung
+
+Die Spaltung entstand durch den Streit um die Nachfolge Muhammads. Schiiten forderten einen Verwandten als Führer, während Sunniten Abu Bakr wählten. Der Konflikt eskalierte 680 in der Schlacht von Kerbela.
+
+### 7. Geographische Verteilung
+
+- **Schiitisch:** Iran, Irak.
+
+- **Sunnitisch:** Nordafrika (z. B. Ägypten, Algerien), Saudi-Arabien, Türkei.
+
+- **Gemischt/Minderheiten:** Syrien (Alawiten), Jemen, Pakistan, Afghanistan.
+
+  
+
+  
