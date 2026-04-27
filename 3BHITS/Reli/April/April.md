@@ -35,12 +35,12 @@ Der Prophet Muhammad starb im Jahr 632.
 
 ### 2. Zuordnung der Aussagen
 
-| **Aussage**                                                  | **Gruppe** |
-| ------------------------------------------------------------ | ---------- |
-| „Muhammad ist gestorben und er hat keinen Nachfolger bestimmt.“ | Sunniten   |
-| „Der Nachfolger des Propheten sollte aus seiner Familie sein.“ | Schiiten   |
-| „Wir sind die Partei Alis.“                                  | Schiiten   |
-| „Wir sind Muslime und glauben an Allah und den Koran.“       | Beide      |
+| **Aussage**                                                  | Sunniten          | Schiiten          | beide             |
+| ------------------------------------------------------------ | ----------------- | ----------------- | ----------------- |
+| „Muhammad ist gestorben und er hat keinen Nachfolger bestimmt.“ | $\color{red} {X}$ |                   |                   |
+| „Der Nachfolger des Propheten sollte aus seiner Familie sein.“ |                   | $\color{red} {X}$ |                   |
+| „Wir sind die Partei Alis.“                                  |                   | $\color{red} {X}$ |                   |
+| „Wir sind Muslime und glauben an Allah und den Koran.“       |                   |                   | $\color{red} {X}$ |
 
 ### 3. Begriffserläuterung
 
