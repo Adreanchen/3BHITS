@@ -315,3 +315,23 @@ Ein regulärer Ausdruck kann auch als Syntaxdiagramm dargestellt werden. Das Syn
 <img src="pics/Syntaxdiagramm_Ausdruck.jpg" style="zoom:20%;" >
 
 <img src="pics/RegExp.png" style="zoom:150%;" >
+
+# Verwendung in Java
+
+## Variante 1
+```java
+String regularExpression = "^[A-Za-z0-9%!=#]+$";
+String toValidate = "3xHits!";
+// So...
+if (stringToValidate.matches(regularExpression)) {
+	System.out.println(stringToValidate + " is valid");
+}
+```
+## Variante 2
+```java
+// ... oder so:
+Pattern pattern = Pattern.compile("^[A-Za-z0-9%!=#]+$");
+if (pattern.matcher(stringToValidate).matches()) {
+	System.out.println(stringToValidate + " is valid");
+}
+```
