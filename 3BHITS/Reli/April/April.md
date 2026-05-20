@@ -70,6 +70,38 @@ Die Spaltung entstand durch den Streit um die Nachfolge Muhammads. Schiiten ford
 
 - **Gemischt/Minderheiten:** Syrien (Alawiten), Jemen, Pakistan, Afghanistan.
 
-  
 
-  
+## [6_Koran(2)](6_Koran(2).pdf)
+
+### Definition und Bedeutung
+
+- **Heilige Schrift**: Der Koran ist die Heilige Schrift des Islam.  
+- **Wort Gottes**: Er gilt als die wörtliche Offenbarung Gottes (Allah) in arabischer Sprache.  
+- **Lebensleitfaden**: Er dient als Gesetz, das das Alltagsleben regelt und bei der Unterscheidung von Recht und Unrecht hilft.  
+- **Praktische Regeln**: Enthält konkrete Vorschriften, zum Beispiel zur Ernährung oder zur rituellen Waschung.  
+
+### Aufbau und Struktur
+
+- **Suren**: Der Koran besteht aus **114 Suren** (Textabschnitten).  
+- **Verse**: Er umfasst insgesamt **6326 Verse**.  
+- **Anordnung**: Mit Ausnahme der ersten Sure (*Al-Fatiha*) sind die Suren fast durchgehend nach ihrer **Länge** geordnet – die längeren stehen vorne, die kürzeren hinten.  
+- **Basmala**: 113 Suren beginnen mit der Formel: „Im Namen Allahs, des Erbarmers, des Barmherzigen“.  
+
+### Entstehung und Offenbarung
+
+- **Zeitraum**: Entstanden über etwa 20 Jahre zu Lebzeiten Mohammeds in **Mekka und Medina**.  
+- **Übermittlung**: Die Offenbarung erfolgte durch den **Erzengel Gabriel** an den Propheten Mohammed.  
+- **Erstes Erlebnis**: Die erste Offenbarung fand in einer Höhle am Berg Hira statt. Mohammed war von der Erscheinung so erschüttert, dass er zitternd zu seiner Frau Chadidscha floh.  
+
+### Schriftliche Fixierung und Kanonisierung
+
+- **Frühe Sammlung**: Die Sammlung der Schriften (mündlich und schriftlich) war bereits vor Mohammeds Tod abgeschlossen.  
+- **Erste Bände**: Unter dem ersten Kalifen Abu Bakr wurden die ersten Bände erstellt, um den Text zu sichern.  
+- **Vereinheitlichung**: Der dritte Kalif, Uthman ibn Affan, ließ einen einheitlichen Koran erstellen und abweichende Dialekte oder private Aufzeichnungen vernichten.  
+- **Bezeugung**: Suren mussten in der Regel von zwei Zeugen bestätigt werden, die sie direkt vom Propheten gehört hatten.  
+- **Verbreitung**: Mindestens fünf Abschriften wurden in die Zentren Mekka, Medina, Basra, Kufa und Damaskus gesandt. 
+
+## [6_Mohammed(1)](6_Mohammed(1).pdf)
+
+
+

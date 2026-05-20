@@ -335,3 +335,38 @@ if (pattern.matcher(stringToValidate).matches()) {
 	System.out.println(stringToValidate + " is valid");
 }
 ```
+
+# Nebenläufigkeit (Threads)
+
+Threads ermöglichen es, einem Programm effizienter zu arbeiten, indem es mehrere Aufgaben gleichzeitig abarbeitet. 
+
+### Thread erzeugen:
+
+Um einen Thread zu erzeugen, ist zunächst das Interface “Runnable” zu implementieren:
+
+```java
+public class BackgroundRunnable implements Runnable {
+    public void run() {
+        System.out.println("Das läuft in einem Thread");
+    }
+}
+```
+
+Anschließend wird das entsprechende Runnable-Objekt der Klasse Thread beim Instanzieren übergeben:
+
+```java
+BackgroundRunnable bgRunnable = new BackgroundRunnable();
+Thread thread1 = new Thread(bgRunnable);
+```
+
+Nun muss der Thread nur noch gestartet werden:
+
+```java
+thread1.start();
+```
+
+### Beenden des Threads:
+
+- Wenn das Ende der Methode run() erreicht wird 
+- Wenn mittels Thread `#interrupt()` eine Unterbrechung angefordert wird, welche mittels Thread `#isInterrupted()` in der run() - Methode abgefragt wird
+- Nicht mit der Methode thread.stop() (Deprecated) !!!

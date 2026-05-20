@@ -1,0 +1,95 @@
+ciscoasa>
+ciscoasa>
+ciscoasa>en
+Password: 
+ciscoasa#
+ciscoasa#
+ciscoasa#
+ciscoasa#sh run
+ASA Version 8.4(2)
+!
+hostname ciscoasa
+names
+!
+interface Ethernet0/0
+ switchport access vlan 2
+!
+interface Ethernet0/1
+ switchport access vlan 3
+!
+interface Ethernet0/2
+!
+interface Ethernet0/3
+!
+interface Ethernet0/4
+!
+interface Ethernet0/5
+!
+interface Ethernet0/6
+!
+interface Ethernet0/7
+!
+interface Vlan1
+ nameif inside
+ security-level 100
+ ip address 192.168.6.1 255.255.255.0
+!
+interface Vlan2
+ nameif outside
+ security-level 0
+ ip address 209.165.200.226 255.255.255.248
+!
+interface Vlan3
+ no forward interface Vlan1
+ nameif dmz
+ security-level 70
+ ip address 192.168.106.1 255.255.255.0
+!
+object network dmz-dns
+ host 192.168.106.4
+ nat (dmz,outside) static 209.165.200.228
+object network dmz=server
+ host 192.168.106.3
+ nat (dmz,outside) static 209.165.200.227
+object network inside=net
+ subnet 192.168.6.0 255.255.255.0
+ nat (inside,outside) dynamic interface
+!
+route outside 0.0.0.0 0.0.0.0 209.165.200.225 1
+!
+access-list OUTSIDE-DMZ extended permit icmp any host 192.168.106.3
+access-list OUTSIDE-DMZ extended permit tcp any host 192.168.106.3 eq 443
+access-list OUTSIDE-DMZ extended permit udp any host 192.168.106.4 eq domain
+access-list OUTSIDE-DMZ extended permit tcp any host 192.168.106.4 eq domain
+access-list OUTSIDE-DMZ extended permit icmp any host 192.168.106.4
+!
+!
+access-group OUTSIDE-DMZ in interface outside
+!
+!
+class-map inspection_default
+ match default-inspection-traffic
+!
+policy-map global_policy
+ class inspection_default
+  inspect icmp 
+!
+service-policy global_policy global
+!
+telnet timeout 5
+ssh timeout 5
+!
+dhcpd auto_config outside
+!
+dhcpd address 192.168.6.10-192.168.6.32 inside
+dhcpd dns 8.8.8.8 interface inside
+dhcpd lease 86400 interface inside
+!
+!
+!
+!
+!
+ciscoasa#
+ciscoasa#
+ciscoasa#
+ciscoasa#
