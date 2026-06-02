@@ -73,7 +73,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                at.htlhl.carconfiguratorfx/at.htlhl.carconfiguratorfx.HelloApplication
+                                at.htlhl.carconfiguratorfx/at.htlhl.carconfiguratorfx.App
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
@@ -84,6 +84,11 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.panteleyev</groupId>
+                <artifactId>jpackage-maven-plugin</artifactId>
+                <version>1.7.4</version>
             </plugin>
         </plugins>
     </build>

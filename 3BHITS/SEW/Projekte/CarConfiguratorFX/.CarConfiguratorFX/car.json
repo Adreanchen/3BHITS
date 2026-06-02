@@ -1,6 +1,6 @@
 {
-  "power" : 100,
-  "manufacturer" : "Porsche",
+  "type" : "911 Turbo S Coupé",
   "range" : 600,
-  "type" : "911 Carrera"
+  "power" : 100,
+  "manufacturer" : "Porsche"
 }
