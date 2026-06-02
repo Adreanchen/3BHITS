@@ -6,7 +6,7 @@
 
     <groupId>at.htlhl.carconfiguratorfx</groupId>
     <artifactId>CarConfiguratorFX</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>CarConfiguratorFX</name>
 
     <properties>
@@ -67,6 +67,11 @@
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
+                <configuration>
+                    <jlinkImageName>${project.artifactId}</jlinkImageName>
+                    <launcher>${project.artifactId}</launcher>
+                    <mainClass>at.htlhl.carconfiguratorfx/at.htlhl.carconfiguratorfx.App</mainClass>
+                </configuration>
                 <executions>
                     <execution>
                         <!-- Default configuration for running with: mvn clean javafx:run -->
@@ -75,12 +80,15 @@
                             <mainClass>
                                 at.htlhl.carconfiguratorfx/at.htlhl.carconfiguratorfx.App
                             </mainClass>
+
+                            <!--
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
                             <noManPages>true</noManPages>
                             <stripDebug>true</stripDebug>
                             <noHeaderFiles>true</noHeaderFiles>
+                            -->
                         </configuration>
                     </execution>
                 </executions>
@@ -88,7 +96,23 @@
             <plugin>
                 <groupId>org.panteleyev</groupId>
                 <artifactId>jpackage-maven-plugin</artifactId>
-                <version>1.7.4</version>
+                <version>1.6.0</version>
+                <configuration>
+                    <name>${project.artifactId}</name>
+                    <appVersion>${project.version}</appVersion>
+                    <vendor>Fritz Adrian</vendor>
+                    <module>at.htlhl.carconfiguratorfx/at.htlhl.carconfiguratorfx.App</module>
+                    <runtimeImage>target/${project.artifactId}</runtimeImage>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>app_image</id>
+                        <configuration>
+                            <type>APP_IMAGE</type>
+                            <destination>target/dist/app_image</destination>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
