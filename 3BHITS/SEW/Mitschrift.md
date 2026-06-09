@@ -370,3 +370,47 @@ thread1.start();
 - Wenn das Ende der Methode run() erreicht wird 
 - Wenn mittels Thread `#interrupt()` eine Unterbrechung angefordert wird, welche mittels Thread `#isInterrupted()` in der run() - Methode abgefragt wird
 - Nicht mit der Methode thread.stop() (Deprecated) !!!
+
+### Zugriff auf UI(JavaFX) Komponenten aus einem Thread
+
+JavaFX (und viele andere UI-Frameworks) verwenden einen Thread (JavaFX Application Thread) um die UI-Komponenten (Buttons, Labels, …) zu rendern und zu aktualisieren. Von einem anderen Thread darf nicht direkt auf UI-Komponenten zugegriffen werden. JavaFX Events werden automatisch in diesem Thread behandelt, sodass man sich z.B. bei einem Buttonklick nicht speziell darum kümmern muss. 
+
+Möchte man jedoch von einem anderen Thread auf eine UI-Komponente zugreifen, muss man diesen Zugriff in den JavaFX Application Thread “einhängen”. 
+
+Dafür kann der statische Methode `Platform#runLater(…)` ein entwprechendes `Runnable` übergeben werden:
+
+```java
+Platform.runLater(new Runnable() {
+    @Override
+    public void run() {
+        runeButton.setText("Tune");
+    }
+)};
+```
+
+Um zu überprüfen, ob der aktuelle Programmcode im Application Thread ausgeführt wird oder nciht, kann die Methode `Platform#isFXApplicationThread()` verwendet werden:
+
+```java
+boolean isFXThread = Platform.isFXApplicationThread();
+```
+
+# Netzwerkkommunikation mit TCP Sockets
+
+TCP ist ein verbindungsorientiertes Protokoll (siehe Gegenstand Netzwerktechnik). Zwischen Client- und Serverprozess wird eine virtuelle Verbindung aufgebaut, über die durch einen bidirektionalen Datenstrom Daten aussgetauscht werden. 
+
+Zu dem Zweck wird sowohl auf Client- als auch auf Serverseite ein sogenannter Socket erstellt. 
+
+| Client                                           | Server                              |
+| ------------------------------------------------ | ----------------------------------- |
+| socket (Open Client)                             | socket (open Listen)                |
+| (Open Client)                                    | bind (open Listen)                  |
+| (Open Client)                                    | listen (open Listen)                |
+| connect (-> Connection request ->) (Open Client) | accept                              |
+| write (–>) (geht owe)                            | read                                |
+| read (<–)                                        | write (geht aufe)                   |
+| close (-> End of File ->)                        | read                                |
+|                                                  | close (geht zum accept wieder aufe) |
+
+`Konkrete Implementierung siehe Demo Programm.`
+
+Damit ein Server mit mehreren Clients gleichzeitig kommunizieren kann, verwendet man Threads. 
