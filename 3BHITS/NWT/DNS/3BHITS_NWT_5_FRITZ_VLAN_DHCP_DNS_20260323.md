@@ -59,6 +59,10 @@ Ein zentraler DHCP-Server im Management-VLAN versorgt alle Endgeräte. Da sich d
 
 ------
 
+PC0 mit `fritz.at` den Webserver erreichen
+
+<img src="WebsiteVIA_DNS.png">
+
 ## 4. CLI-Konfiguration
 
 ### 4.1 Cisco 2911 Router (Inter-VLAN & Webserver Routing)
