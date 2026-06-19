@@ -27,3 +27,17 @@
    ```
 
 <img src="pics/MSSQL_status.png">
+
+## 2. studyorganizer migraten
+
+**das Projekt hat sich zerschossen (oder vielleicht wars auch ich)**
+
+## 3. Datagrip
+
+<img src="pics/PROPERTIES.png">
+
+<img src="pics/USE_SSH_TUNNEL.png">
+
+<img src="pics/SSH_CONFIG.png">
+
+<img src="pics/TRUST_SERVER_CERTIFICATE.png">
